@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EasyUpdate</string>
+
+    <!-- Error -->
+    <string name="error_sdcard">SD卡不可用，下载失败</string>
+    <string name="error_no_space">没有足够的存储空间，下载失败</string>
+    <string name="error_file">没有存储空间权限，下载失败</string>
+
+    <!-- Download-->
+    <string name="download_ready">准备下载</string>
+    <string name="download_already">已在下载中..</string>
+    <string name="download_ongoing">正在下载：%s ，点击暂停</string>
+    <string name="download_failure">下载失败，点击重试</string>
+    <string name="download_pause">暂停下载，点击开始</string>
+
+
+    <string name="update_error">升级失败</string>
+
+</resources>

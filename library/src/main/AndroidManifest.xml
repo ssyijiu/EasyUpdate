@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.ssyijiu.easyupdate"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        >
+
+        <provider
+            android:name="com.ssyijiu.easyupdate.tools.EasyUpdateFileProvider"
+            android:authorities="com.ssyijiu.easyupdate.provider.install"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/easyupdate_provider_install"/>
+        </provider>
+
+        <receiver android:name=".DownloadReceiver"/>
+        <service android:name=".DownloadService"/>
+    </application>
+
+</manifest>
